@@ -19,13 +19,11 @@ const Home: NextPage = () => {
         <ConnectButton />
 
         <h1 className={styles.title}>
-          Welcome to <a href="">RainbowKit</a> + <a href="">wagmi</a> +{' '}
-          <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <a href="">PLUTO</a>
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+         Become a DeFi Funded trader today!
         </p>
 
         <div className={styles.grid}>
@@ -73,8 +71,8 @@ const Home: NextPage = () => {
       </main>
 
       <footer className={styles.footer}>
-        <a href="https://rainbow.me" rel="noopener noreferrer" target="_blank">
-          Made with ❤️ by your frens at 🌈
+        <a href="_" rel="noopener noreferrer" target="_blank">
+          Made with ❤️ by 0xdeivid
         </a>
       </footer>
     </div>

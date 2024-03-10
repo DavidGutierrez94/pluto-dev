@@ -12,6 +12,8 @@ import {
   polygon,
   sepolia,
   zora,
+  avalanche,
+  avalancheFuji,
 } from 'wagmi/chains';
 import { getDefaultConfig, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 
@@ -25,6 +27,8 @@ const config = getDefaultConfig({
     arbitrum,
     base,
     zora,
+    avalanche,
+    avalancheFuji,
     ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [sepolia] : []),
   ],
   ssr: true,
