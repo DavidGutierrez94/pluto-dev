@@ -19,7 +19,7 @@ const Proposal: NextPage = () => {
         <div>
      
         <h1 className="text-xl mb-4"># Proposals: <ProposalCountComponent></ProposalCountComponent></h1>
-        <p>Let's build a DeFi Funded Trader platform</p>
+        <p>Let&apos;s build a DeFi Funded Trader platform</p>
         <h2 className="text-4xl font-bold mb-4">Deposit Funds</h2>
         <DepositCard></DepositCard>
 
