@@ -22,7 +22,7 @@ export default defineConfig({
         {
           name: 'EnsRegistry',
           address: {
-            [avalancheFuji.id]: '0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71',
+            [avalancheFuji.id]: '0x373Abf195913E6642f8460A5b807022a58dFA311',
             
           },
         },

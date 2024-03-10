@@ -10,7 +10,7 @@ import {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /**
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const ensRegistryAbi = [
   {
@@ -50,6 +50,7 @@ export const ensRegistryAbi = [
     ],
     name: 'OwnershipTransferred',
   },
+  { type: 'fallback', stateMutability: 'payable' },
   {
     type: 'function',
     inputs: [
@@ -66,7 +67,7 @@ export const ensRegistryAbi = [
     inputs: [{ name: '_amount', internalType: 'uint256', type: 'uint256' }],
     name: 'deposit',
     outputs: [],
-    stateMutability: 'nonpayable',
+    stateMutability: 'payable',
   },
   {
     type: 'function',
@@ -147,17 +148,18 @@ export const ensRegistryAbi = [
     outputs: [],
     stateMutability: 'nonpayable',
   },
+  { type: 'receive', stateMutability: 'payable' },
 ] as const
 
 /**
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const ensRegistryAddress = {
-  43113: '0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71',
+  43113: '0x373Abf195913E6642f8460A5b807022a58dFA311',
 } as const
 
 /**
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const ensRegistryConfig = {
   address: ensRegistryAddress,
@@ -413,7 +415,7 @@ export const plutoAbi = [
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link ensRegistryAbi}__
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useReadEnsRegistry = /*#__PURE__*/ createUseReadContract({
   abi: ensRegistryAbi,
@@ -423,7 +425,7 @@ export const useReadEnsRegistry = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"owner"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useReadEnsRegistryOwner = /*#__PURE__*/ createUseReadContract({
   abi: ensRegistryAbi,
@@ -434,7 +436,7 @@ export const useReadEnsRegistryOwner = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"proposalCount"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useReadEnsRegistryProposalCount =
   /*#__PURE__*/ createUseReadContract({
@@ -446,7 +448,7 @@ export const useReadEnsRegistryProposalCount =
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"proposals"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useReadEnsRegistryProposals = /*#__PURE__*/ createUseReadContract({
   abi: ensRegistryAbi,
@@ -457,7 +459,7 @@ export const useReadEnsRegistryProposals = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"shares"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useReadEnsRegistryShares = /*#__PURE__*/ createUseReadContract({
   abi: ensRegistryAbi,
@@ -468,7 +470,7 @@ export const useReadEnsRegistryShares = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"token"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useReadEnsRegistryToken = /*#__PURE__*/ createUseReadContract({
   abi: ensRegistryAbi,
@@ -479,7 +481,7 @@ export const useReadEnsRegistryToken = /*#__PURE__*/ createUseReadContract({
 /**
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"totalShares"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useReadEnsRegistryTotalShares =
   /*#__PURE__*/ createUseReadContract({
@@ -491,7 +493,7 @@ export const useReadEnsRegistryTotalShares =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link ensRegistryAbi}__
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useWriteEnsRegistry = /*#__PURE__*/ createUseWriteContract({
   abi: ensRegistryAbi,
@@ -501,7 +503,7 @@ export const useWriteEnsRegistry = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"createProposal"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useWriteEnsRegistryCreateProposal =
   /*#__PURE__*/ createUseWriteContract({
@@ -513,7 +515,7 @@ export const useWriteEnsRegistryCreateProposal =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"deposit"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useWriteEnsRegistryDeposit = /*#__PURE__*/ createUseWriteContract({
   abi: ensRegistryAbi,
@@ -524,7 +526,7 @@ export const useWriteEnsRegistryDeposit = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"renounceOwnership"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useWriteEnsRegistryRenounceOwnership =
   /*#__PURE__*/ createUseWriteContract({
@@ -536,7 +538,7 @@ export const useWriteEnsRegistryRenounceOwnership =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"transferOwnership"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useWriteEnsRegistryTransferOwnership =
   /*#__PURE__*/ createUseWriteContract({
@@ -548,7 +550,7 @@ export const useWriteEnsRegistryTransferOwnership =
 /**
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"vote"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useWriteEnsRegistryVote = /*#__PURE__*/ createUseWriteContract({
   abi: ensRegistryAbi,
@@ -559,7 +561,7 @@ export const useWriteEnsRegistryVote = /*#__PURE__*/ createUseWriteContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link ensRegistryAbi}__
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useSimulateEnsRegistry = /*#__PURE__*/ createUseSimulateContract({
   abi: ensRegistryAbi,
@@ -569,7 +571,7 @@ export const useSimulateEnsRegistry = /*#__PURE__*/ createUseSimulateContract({
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"createProposal"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useSimulateEnsRegistryCreateProposal =
   /*#__PURE__*/ createUseSimulateContract({
@@ -581,7 +583,7 @@ export const useSimulateEnsRegistryCreateProposal =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"deposit"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useSimulateEnsRegistryDeposit =
   /*#__PURE__*/ createUseSimulateContract({
@@ -593,7 +595,7 @@ export const useSimulateEnsRegistryDeposit =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"renounceOwnership"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useSimulateEnsRegistryRenounceOwnership =
   /*#__PURE__*/ createUseSimulateContract({
@@ -605,7 +607,7 @@ export const useSimulateEnsRegistryRenounceOwnership =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"transferOwnership"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useSimulateEnsRegistryTransferOwnership =
   /*#__PURE__*/ createUseSimulateContract({
@@ -617,7 +619,7 @@ export const useSimulateEnsRegistryTransferOwnership =
 /**
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link ensRegistryAbi}__ and `functionName` set to `"vote"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useSimulateEnsRegistryVote =
   /*#__PURE__*/ createUseSimulateContract({
@@ -629,7 +631,7 @@ export const useSimulateEnsRegistryVote =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link ensRegistryAbi}__
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useWatchEnsRegistryEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -640,7 +642,7 @@ export const useWatchEnsRegistryEvent =
 /**
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link ensRegistryAbi}__ and `eventName` set to `"OwnershipTransferred"`
  *
- * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x6aE890e93b43FE5549DB21b857d3e698c4ca7A71)
+ * [__View Contract on Avalanche Fuji Snow Scan__](https://testnet.snowscan.xyz/address/0x373Abf195913E6642f8460A5b807022a58dFA311)
  */
 export const useWatchEnsRegistryOwnershipTransferredEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
