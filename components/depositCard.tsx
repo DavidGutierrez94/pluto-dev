@@ -8,7 +8,7 @@ const DepositCard = () => {
   const { status } = useWritePlutoDeposit();
   const { sendTransaction } = useSendTransaction();
 
-  const handleSubmit = async (e:Event) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!amount) return;
     try {
